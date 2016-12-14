@@ -2,22 +2,31 @@
 <html ng-app="Shure">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Kevin Salazar</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather|Open+Sans|Roboto" rel="stylesheet">
   </head>
   <body>
-    <div id="topNav">
-      <h1> Kevin Salazar </h1>
-        <h3> Web Design </h3>
+    <div>
+      <h1 id="topHeader"> Kevin Salazar </h1>
+        <h3 id="smallHeader"> Web Design </h3>
           <nav class="main-nav">
             <ul>
-              <li><a ui-sref="home">Home</a></li>
-              <li><a ui-sref="picturesList">Pictures</a></li>
               <li><a ui-sref="servicesList">Services</a></li>
+              <li><a ui-sref="picturesList">Pictures</a></li>
+              <li><a ui-sref="home">Home</a></li>
             </ul>
           </nav>
     </div>
     <div ui-view></div>
+    <footer class="footer">
+      <!-- <a href="google.com" class="socialMedia">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEU8Wpn///8jSpHx8/c5WJhQaaLX3OgoTZLu8PUwUpU0VJahrMiGlLp8jLU2VpceR5BIY567w9fa3umxutHn6vFzhbGRnsD3+PoAO4ubp8VacaVne6tFYZ2mscvR1uNhd6mYpMTEy9xtgK5WbqQq/f59AAAEMklEQVR4nO3d63qiMBSFYcQoBjXxgDjVolXv/x6nraO19pANYRN3Zn3/W/M+gqgkMenFXhJ6AOz9f8K+/H4R7ibPNo2gWbn4VjgcpLlKYkjpdLP4KiytCT2yFlO2uhdOs9CDarm0/CwsYwO+Eqtb4dCGHg9DtrgRDmI6By+Z7Ydwl4YeDUvnJ/FdWOahB8OSHl+Fz3FcB+9T+6swxteZ5O3KfxH24zwNXy8YEIoPQvlBKD8I5Qeh/CCUH4Tyg1B+EMoPwgfImPycyY1RRiX1vhR8ZKHKdZbaZHOcTt6bTlfH/WmWZNamaZZlWufGrX1Yoc7sqVwOR73vWveLxe6wHE9WJyfxIYVKp0m5W3+Lu2/i+qr+AYUqyz7doY5NqLLZnMwTKHz1Her4xAlNtqznkyZMj7RXF6lCZWudgPKERhUNgIKE+aD+ESpKqPeNfHKE+aYhUIpQzZoCpQj1/WzJ2IR21xgoQ6hfmgNFCD1OQiFCS/+oJFOYT3yAEoRps/cycoS5z8uMCKFtfimUIfQ8CwUIU68XUgFCv2uhBKGuHADxwrTR53pBQvXsC3x0oS4d4xcvzA6xC9Mal/vhfFxOpl8auG4+BT4Pibr1cmMz/Xa/ML/vse+umRUN+JTq5otBggr1E8XXn2mfBwkqzChf4/e134qzsMIhQXjyXFIXVEh5R7P0XfYZVkj4eF9zbsk3DxJU6Ab6r4oMKVS5W/jivSoy6HNIeN+9914VGfQ5JHz89R9VUOHACVxHLyyiFy78N0GAkDOCcAihOwg5gxBCWhByBiGEtCDkDEIIaUHIGYQQ0oKQs0iE+ueNcK17h+bdH8dmuuFXyeqX/ujnnML1L3/81to5UYFfOHYqvHIfxcKFhFELFxK+MRYuPEQvrNwTUYQLCRvnChce3VNRhAsJWwMLFxIGLVs4il5IeWMuWziPXjgmzMuULXRO8hYv3BJmTMkWUqaEyRZSxixaSJoxJVq4o3xPJVo4p0ziFy18il44pUzjFy3cRC8krRWSLKRNIJYspE0gliwkXQ5FC5ekNW2ShbTVJpKFq+iF7jtrXQhzRiHt/rDke8C0AeA+PmcQQkgLQs4ghJAWhJxBCCEtCDmDEEJaEHIGIYS0IOQMQghpQcgZhBDSgpAzCCGkBSFnEEJIC0LOIISQFoScQQghLQg5gxBCWhByBiGEtCDkDEIIaUHIGYQQ0oKQMwghpAUhZxBCSAtCziCEkNZV2MIvftatE+H5B2vfhbRdJtqsE6HZXoWl1y+YN6kToa6uwkXnh2knQju6Cnubrg/TLoRm1fsQFraVcdPrQnh+Cv8Je1XHx2kHQjvv3Qp7ZbdEfqG97P9z3QmnspR9+tqKW2guz+CNsFdsrVZdveJwCpXRdvXxKy+3uxkV4/0vGx+1Whu/pPNT+bYqbv6P+5GkB6H84hf+BeSxYJVPQP+WAAAAAElFTkSuQmCC"/>
+      </a>
+      <a href="google.com/images" class="socialMedia">
+        <img src="http://www.underconsideration.com/brandnew/archives/instagram_2016_icon.jpg"/>
+      </a> -->
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>

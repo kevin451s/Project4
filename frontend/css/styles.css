@@ -1,0 +1,37 @@
+/* Styling for the header and navbar */
+#topHeader {
+  display: inline-block;
+  font-size: 60px;
+  line-height: 0;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: -3px;
+}
+#smallHeader {
+  /*display: inline-block;*/
+  font-size: 20px;
+  line-height: 0;
+  margin-top: -6px;
+  margin-left: 3px;
+  font-family: 'Lora', serif;
+}
+.main-nav li {
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 90px;
+  padding-left: 90px;
+  margin-left: 40px;
+  margin-top: -90px;
+  margin-bottom: 60px;
+}
+/*CSS for a tags inside of navbar*/
+.main-nav a {
+  text-decoration: none;
+  color: black;
+}
+.main-nav a:hover {
+  color: white;
+}

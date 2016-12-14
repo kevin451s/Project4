@@ -16,7 +16,7 @@
   function PictureListController(PictureResource) {
 
     var vm = this;
-    vm.title = "this is working "
+
     vm.pictures = [];
     vm.deletePicture = deletePicture;
 
@@ -62,7 +62,7 @@
 
   function PictureEditController(PictureResource, $state, $stateParams) {
     var vm = this;
-    vm.title = "its working"
+    
     vm.picture = {};
     vm.updatePicture = updatePicture;
 
