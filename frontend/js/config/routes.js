@@ -51,7 +51,9 @@
       })
       .state('servicesList', {
         url: '/services',
-        templateUrl: 'js/templates/services.html'
+        templateUrl: 'js/templates/services.html',
+        controller: 'ServiceListController',
+        controllerAs: 'serviceListVm'
       })
   }
 }());

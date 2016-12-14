@@ -13,67 +13,67 @@
 
 
 
-  function PictureListController(PictureResource) {
+  function ServiceListController(ServiceResource) {
 
     var vm = this;
     vm.title = "this is working "
-    vm.pictures = [];
-    vm.deletePicture = deletePicture;
+    vm.services = [];
+    vm.deleteService = deleteService;
 
-    PictureResource.query().$promise.then(function(data) {
-      console.log('PictureResource.query()')
-      vm.pictures = data;
-      console.log(vm.pictures)
+    ServiceResource.query().$promise.then(function(data) {
+      console.log('ServiceResource.query()')
+      vm.services = data;
+      console.log(vm.services)
     });
 
-    function deletePicture(pictureToDelete) {
-      PictureResource.delete({id:pictureToDelete._id}).$promise.then(function(response) {
+    function deleteService(serviceToDelete) {
+      ServiceResource.delete({id:serviceToDelete._id}).$promise.then(function(response) {
         if(response.message) {
           console.log(response.message);
-          vm.pictures = vm.pictures.filter(function(picture) {
-            return picture != pictureToDelete;
+          vm.services = vm.services.filter(function(service) {
+            return service != serviceToDelete;
           });
         }
       });
     }
   }
 
-  function PictureNewController(PictureResource, $state) {
+  function ServiceNewController(ServiceResource, $state) {
     var vm = this;
-    vm.newPicture = {};
-    vm.addPicture = addPicture;
+    vm.newService = {};
+    vm.addService = addService;
 
-    function addPicture() {
-      PictureResource.save(vm.newPicture).$promise.then(function(jsonPicture) {
-        vm.newPicture = {};
-        $state.go('pictureList')
+    function addService() {
+      ServiceResource.save(vm.newService).$promise.then(function(jsonService) {
+        vm.newService = {};
+        $state.go('serviceList')
       });
     }
   }
 
-  function PictureShowController(PictureResource, $stateParams) {
+  function ServiceShowController(ServiceResource, $stateParams) {
     var vm = this;
-    vm.picture = {};
+    vm.service = {};
 
-    PictureResource.get({id: $stateParams.id}).$promise.then(function(jsonPicture) {
-      vm.picture = jsonPicture;
+    ServiceResource.get({id: $stateParams.id}).$promise.then(function(jsonService) {
+      vm.service = jsonService;
     });
   }
 
-  function PictureEditController(PictureResource, $state, $stateParams) {
+  function ServiceEditController(ServiceResource, $state, $stateParams) {
     var vm = this;
     vm.title = "its working"
-    vm.picture = {};
-    vm.updatePicture = updatePicture;
+    vm.service = {};
+    vm.updateService = updateService;
 
-    PictureResource.get({id: $stateParams.id}).$promise.then(function(jsonPicture) {
-      vm.picture = jsonPicture;
+    ServiceResource.get({id: $stateParams.id}).$promise.then(function(jsonService) {
+      vm.service = jsonService;
     });
 
-    function updatePicture() {
-      PictureResource.update(vm.picture).$promise.then(function(editedPicture) {
-        vm.picture = editedPicture;
-        $state.go('pictureList');
+    function updateService() {
+      ServiceResource.update(vm.service).$promise.then(function(editedService) {
+        vm.service = editedService;
+        $state.go('serviceList');
       });
     }
   }
