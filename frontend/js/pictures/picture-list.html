@@ -1,0 +1,9 @@
+<ul>
+  <li ng-repeat="picture in pictureListVm.picture">
+    <img ng-src={{picture.url}}>
+    {{picture.title}}
+    <a ui-sref="pictureShow({id: picture._id})">More Info</a>
+    <a ui-sref="pictureEdit({id: picture._id})">Edit</a>
+    <a href="" ng-click="pictureListVm.deletePicture(picture)">Delete Me</a>
+  </li>
+</ul>

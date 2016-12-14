@@ -1,0 +1,11 @@
+I will put what my app does here.
+<ul>
+  <li ng-repeat="pictures in pictureListVm.pictures">
+    <img ng-src={{pictures.url}}>
+    {{picture.title}}
+    <a ui-sref="picturesShow({id: pictures._id})">More Info</a>
+    <a ui-sref="picturesEdit({id: pictures._id})">Edit</a>
+    <a href="" ng-click="picturesListVm.deletePictures(pictures)">Delete Me</a>
+  </li>
+</ul>
+{{6+6}}
