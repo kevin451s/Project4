@@ -4,7 +4,9 @@ function getAll(request, response) {
   Picture.find(function(error, pictures) {
     if(error) response.json({message: 'Could not find any pictures'});
 
-    response.json({pictures: pictures});
+    response.json(pictures);
+
+    // response.json({pictures: pictures});
   }).select('-__v');
 }
 // POST

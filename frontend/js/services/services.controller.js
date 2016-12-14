@@ -1,15 +1,15 @@
 (function() {
   'use strict';
   angular.module('Shure')
-    .controller('PictureListController', PictureListController)
-    .controller('PictureNewController', PictureNewController)
-    .controller('PictureShowController', PictureShowController)
-    .controller('PictureEditController', PictureEditController);
+    .controller('ServiceListController', ServiceListController)
+    .controller('ServiceNewController', ServiceNewController)
+    .controller('ServiceShowController', ServiceShowController)
+    .controller('ServiceEditController', ServiceEditController);
 
-  PictureListController.$inject = ['PictureResource'];
-  PictureNewController.$inject = ['PictureResource', '$state'];
-  PictureShowController.$inject = ['PictureResource', '$stateParams'];
-  PictureEditController.$inject = ['PictureResource', '$state', '$stateParams'];
+  ServiceListController.$inject = ['ServiceResource'];
+  ServiceNewController.$inject = ['ServiceResource', '$state'];
+  ServiceShowController.$inject = ['ServiceResource', '$stateParams'];
+  ServiceEditController.$inject = ['ServiceResource', '$state', '$stateParams'];
 
 
 

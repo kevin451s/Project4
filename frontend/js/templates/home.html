@@ -1,11 +1,6 @@
-I will put what my app does here.
-<ul>
-  <li ng-repeat="pictures in pictureListVm.pictures">
-    <img ng-src={{pictures.url}}>
-    {{picture.title}}
-    <a ui-sref="picturesShow({id: pictures._id})">More Info</a>
-    <a ui-sref="picturesEdit({id: pictures._id})">Edit</a>
-    <a href="" ng-click="picturesListVm.deletePictures(pictures)">Delete Me</a>
-  </li>
-</ul>
-{{6+6}}
+<div >
+  This is my landing page. I need to put what users will first see here.
+  I will put what my app does here.
+  {{pictureListVm.title || "cant find it"}}
+  <a ui-sref="picturesList">See all the pictures</a>
+</div>
