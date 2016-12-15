@@ -1,3 +1,0 @@
-[submodule "api/database"]
-	path = api/database
-	url = git@github.com:kevin451s/Project4.git
