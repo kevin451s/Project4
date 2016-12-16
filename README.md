@@ -24,3 +24,6 @@
 ## [Trello](https://trello.com/b/fFPoNIlT/project-4)
 
 Click header above for link to trello.
+
+#Future Plans
+I have a lot to work on over the break. Implementing more styling and even more functionality. I would also like to add a feature that messages me so that I can receive e-mails from potential clients.
