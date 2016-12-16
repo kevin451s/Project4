@@ -17,9 +17,9 @@
 
 ## Wireframes
 
- ![](./assets/image3.JPG)
- ![](./assets/image2.JPG)
- ![](./assets/image.JPG)
+ ![](./assets/3.JPG)
+ ![](./assets/2.JPG)
+ ![](./assets/1.JPG)
 
 ## [Trello](https://trello.com/b/fFPoNIlT/project-4)
 
